@@ -1,4 +1,4 @@
-package com.chatchat.domain;
+package com.shop31cm.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;

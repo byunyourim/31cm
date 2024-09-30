@@ -1,10 +1,10 @@
-package com.chatchat;
+package com.shop31cm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ChatchatApplicationTests {
+class Shop31cmApplicationTests {
 
 	@Test
 	void contextLoads() {
