@@ -1,5 +1,5 @@
-# chatchat
-채팅 프로그램-TDD
+# 31CM
+쇼핑몰 프로젝트
 
 
 <br><br><br>
