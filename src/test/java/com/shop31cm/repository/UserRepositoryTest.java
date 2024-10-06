@@ -31,11 +31,11 @@ public class UserRepositoryTest {
     public void testUserSignUp() throws Exception {
         // given
         User newUser = User.builder()
-            .userEmail("test@gmail.com")
-            .userPassword("password")
+            .email("test@gmail.com")
+            .password("password")
             .nickname("tester")
-            .userPhone("010-1111-1111")
-            .userRole(UserRole.BUYER)
+            .phone("010-1111-1111")
+            .role(UserRole.BUYER)
             .build();
 
         // when
@@ -48,9 +48,9 @@ public class UserRepositoryTest {
 
         // then
         assertThat(result).isNotNull();
-        assertThat(result.getUserEmail()).isEqualTo(newUser.getUserEmail());
+        assertThat(result.getEmail()).isEqualTo(newUser.getEmail());
         assertThat(result.getNickname()).isEqualTo(newUser.getNickname());
-        assertThat(result.getUserRole()).isEqualTo(newUser.getUserRole());
-        assertThat(result.getUserPhone()).isEqualTo(newUser.getUserPhone());
+        assertThat(result.getRole()).isEqualTo(newUser.getRole());
+        assertThat(result.getPhone()).isEqualTo(newUser.getPhone());
     }
 }
