@@ -67,11 +67,11 @@ public class UserService {
 
     private User createUser(String email, String nickname, String password, String phone) {
         return User.builder()
-            .userEmail(email)
+            .email(email)
             .nickname(nickname)
-            .userPassword(password)
-            .userRole(UserRole.BUYER)
-            .userPhone(phone)
+            .password(password)
+            .role(UserRole.BUYER)
+            .phone(phone)
             .build();
 
     }

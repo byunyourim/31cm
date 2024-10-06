@@ -38,20 +38,19 @@ public class User extends BaseTimeEntity {
 
     @NotNull
     @Email
-    @Column(name = "user_email")
-    private String userEmail;
+    @Column(name = "email")
+    private String email;
 
     @NotNull
-    @Column(name = "user_password")
-    private String userPassword;
+    @Column(name = "password")
+    private String password;
 
     @NotNull
-    @Column(name = "user_phone")
-    private String userPhone;
+    @Column(name = "phone")
+    private String phone;
 
     @Enumerated(value = EnumType.STRING)
-    private UserRole userRole;
-
+    private UserRole role;
 
 //    @OneToOne(mappedBy = "storeOwner")
 //    private Store store;

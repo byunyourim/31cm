@@ -19,7 +19,7 @@ public class UserDto {
             .email(request.getEmail())
             .nickname(request.getNickname())
             .password(request.getPassword())
-            .confirmpassword(request.getConfirmPassowrd())
+            .confirmpassword(request.getConfirmPassword())
             .phone(request.getPhone())
             .vertificationKey(request.getVerificationKey())
             .build();

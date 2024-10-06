@@ -35,10 +35,10 @@ public class userServiceTest {
     private String confirmpassword = "1234";
 
     private User user = User.builder()
-        .userEmail(email)
+        .email(email)
         .nickname(nickname)
-        .userPassword("password")
-        .userRole(UserRole.BUYER)
+        .password("password")
+        .role(UserRole.BUYER)
         .build();
 
     private UserDto userDto = UserDto.builder()
