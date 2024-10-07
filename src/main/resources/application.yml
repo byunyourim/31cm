@@ -37,3 +37,14 @@ spring:
   profiles:
     active: local
     include: secret
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  issuer: test@gmail.com
+  secret-key: shop31cm
+  token-prefix: Bearer
+  header-string: Authorization

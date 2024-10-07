@@ -1,5 +1,6 @@
 package com.shop31cm.service.user;
 
+import com.shop31cm.config.jwt.JwtTokenProvider;
 import com.shop31cm.domain.User;
 import com.shop31cm.enums.UserRole;
 import com.shop31cm.service.user.dto.UserDto;
@@ -17,7 +18,9 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final JwtTokenProvider jwtTokenProvider;
 
+    @Transactional
     public void signup(UserDto userDto) {
         String email = userDto.getEmail();
         String nickname = userDto.getNickname();
@@ -74,5 +77,10 @@ public class UserService {
             .phone(phone)
             .build();
 
+    }
+
+    public User getUserByEmail(String email) {
+        return userRepository.findByEmail(email)
+            .orElseThrow(() -> new Shop31Exception(ErrorCode.NOT_FOUND_USER));
     }
 }
