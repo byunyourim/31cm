@@ -29,6 +29,7 @@ public class UserControllerTest {
     private UserService userService;
 
     private MockMvc mockMvc;
+
     private final String email = "test@gmail.com";
     private final String nickname = "tester";
     private final String password = "1234";
@@ -49,7 +50,7 @@ public class UserControllerTest {
             .email(email)
             .nickname(nickname)
             .password(password)
-            .confirmPassowrd(confirmPassword)
+            .confirmPassword(confirmPassword)
             .build();
 
 
